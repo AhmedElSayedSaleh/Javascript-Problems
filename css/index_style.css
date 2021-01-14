@@ -1,0 +1,114 @@
+
+.main{
+    background-image: url(../images/backlit-chiemsee-dawn-1363876.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+p{
+    text-align: center;
+    color: #fff;
+    border: solid #ad1c1c 2px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #101d30;
+}
+
+.btn{
+    background-color: #101d30;
+    border-color: #101d30;
+    color: #a7954d
+}
+
+hr{
+    border: #101d30 dashed;
+}
+
+
+.calc button{
+    border-radius: 50%;
+}
+
+label{
+    border: #101d30 2px solid;
+    padding: 3px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.calc input{
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tabs {
+    overflow: auto;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #tabs li {
+      margin: 0;
+      padding: 0;
+      float: left;
+  }
+  
+  #tabs a {
+      box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+      background: #ad1c1c;
+      background: linear-gradient(220deg, transparent 10px, #ad1c1c 10px);
+      text-shadow: 0 1px 0 rgba(0,0,0,.5);
+      color: #fff;
+      float: left;
+      font: bold 12px/35px 'Lucida sans', Arial, Helvetica;
+      height: 35px;
+      padding: 0 30px;
+      text-decoration: none;
+  }
+  
+  #tabs a:hover {
+      background: #c93434;
+      background: linear-gradient(220deg, transparent 10px, #c93434 10px);     
+  }
+  
+  #tabs a:focus {
+      outline: 0;
+  }
+  
+  #tabs #current a {
+      background: #fff;
+      background: linear-gradient(220deg, transparent 10px, #fff 10px);
+      text-shadow: none;    
+      color: #333;
+  }
+  
+  #content {
+      background-image:         linear-gradient(top, #fff, #ddd);
+      border-radius: 0 2px 2px 2px;
+      box-shadow: 0 2px 2px #000, 0 -1px 0 #fff inset;
+      padding: 30px;
+  }
+  
+  /* Remove the rule below if you want the content to be "organic" */
+  #content div {
+      height: 100vh; 
+  }

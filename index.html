@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
+</head>
+
+
+<body>
+    <div class="main">
+        <ul id="tabs">
+            <li><a href="#" title="tab1">Exercise1</a></li>
+            <li><a href="#" title="tab2">Exercise2</a></li>
+            <li><a href="#" title="tab3">Exercise3</a></li>
+            <li><a href="#" title="tab4">Exercise4</a></li>
+            <li><a href="#" title="tab5">Exercise5</a></li>
+            <li><a href="#" title="tab6">Exercise6</a></li>
+            <li><a href="#" title="tab7">Exercise7</a></li>
+            <li><a href="#" title="tab8">Exercise8</a></li>
+            <li><a href="#" title="tab9">Exercise9</a></li>
+            <li><a href="#" title="tab10">Exercise10</a></li>
+            <li><a href="#" title="tab11">Exercise11</a></li>
+            <li><a href="#" title="tab12">Exercise12</a></li>
+            <li><a href="#" title="tab13">Exercise13</a></li>
+            <li><a href="#" title="tab14">Exercise14</a></li>
+
+        </ul>
+
+        <div id="content">
+            <div id="tab1">
+                <p>1-Write a JavaScript program to find the area of a triangle where lengths of the three of its sides
+                    are
+                    5, 6, 7.
+                </p>
+
+                <section class="m-auto w-50">
+                    <h1 type="text" class="form-control" id="areaValue"></h1>
+
+                    <button onclick="checkValue()" class="btn btn-outline-light mt-3">Value Of Area</button>
+                </section>
+            </div>
+
+            <div id="tab2">
+                <p>2. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is
+                    then
+                    prompted
+                    to input a guess number. If the user input matches with guess number, the program will display a
+                    message
+                    "Good
+                    Work" otherwise display a message "Not matched</p>
+
+                <section class="m-auto w-50">
+                    <input type="text" class="form-control" id="e2Input" placeholder="Enter your number here">
+
+                    <button onclick="check()" class="btn btn-outline-light mt-3">Check</button>
+                    <p id="feedback"></p>
+                </section>
+            </div>
+
+            <div id="tab3">
+                <p>3. Write a JavaScript program to calculate multiplication and division of two numbers (input from
+                    user)
+                    Sample
+                    form :<img src="/images/as.png" style="width:150px">
+                </p>
+
+                <section class="container m-auto w-50 calc">
+                    <section class="row">
+                        <section class="col-12 mb-3">
+                            <label class="">1st Number:</label>
+                            <input type="text" id="e3Input1" placeholder="Enter your number here">
+
+                            <br>
+                            <label class="ml-4">2nd Number:</label>
+                            <input type="text" id="e3Input2" placeholder="Enter your number here">
+
+                            <br><br>
+
+                            <section class="w-50 m-auto">
+                                <p class="text-left w-75">The Result is :&nbsp<span id="result"></span></p>
+
+                            </section>
+                        </section>
+                    </section>
+                    <section class="row">
+                        <section class="col-12 text-center py-3">
+                            <button onclick="multiply()" class="btn btn-outline-light w-50 m-auto">Multiply</button>
+
+                            <button onclick="divide()" class="btn btn-outline-light w-50 m-auto">Divide</button>
+                        </section>
+                    </section>
+                </section>
+                <section class="clearfix"></section>
+            </div>
+
+            <div id="tab4">
+                <p>4. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.<br>
+                    [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit
+                    ]<br>
+                    Expected Output :
+                    60°C is 140 °F<br>
+                    45°F is 7.222222222222222°C</p>
+
+                <section class="container m-auto w-50 calc">
+                    <section class="row">
+                        <section class="col-12 form-inline mb-3">
+                            <input type="text" placeholder="Fahrenheit" oninput="fToC()" id="e4Input1">
+
+                            <span>=</span>
+
+                            <p><span id="outCel"></span>&nbsp Celcius</p>
+                        </section>
+                        <section class="col-12 form-inline mb-3">
+                            <input type="text" placeholder="Celcius" oninput="cToF()" id="e4Input2">
+
+                            <span>=</span>
+
+
+                            <p><span id="outFahr"></span>&nbsp Fahrenheit</p>
+                        </section>
+
+                    </section>
+                </section>
+            </div>
+
+            <div id="tab5">
+                <p>5. Write a JavaScript exercise to get the extension of a filename. (Search for it )</p>
+
+                <section class="m-auto w-25">
+                    <label class="form-control-file w-25">Select file</label>
+                    <input type="file" class="my-3" oninput="pathCheck()" id="filePath">
+                    <p id="pathValue"></p>
+                </section>
+            </div>
+
+            <div id="tab6">
+                <p>6 . Write a JavaScript program to get the difference between a given number and 13, if the number is
+                    greater than 13 return double the absolute difference.
+                </p>
+
+                <section class="w-50 m-auto form-group">
+                    <input type="number" placeholder="Enter your number here" class="w-100 -auto form-control"
+                        id="e6Input">
+
+                    <h6 class="w-100 text-right text-white">compare between this number and 13.</h6>
+
+                    <br>
+                    <button class="btn btn-outline-light w-25 mt" onclick="compare()">Compare</button>
+
+                    <p class="w-25 text-left m-auto" id="compareNum">Result:</p>
+
+                </section>
+            </div>
+
+            <div id="tab7">
+                <p>
+                    7 . Write a JavaScript program to compute the sum of the two given integers. If the two values are
+                    same,
+                    then returns
+                    triple their sum
+                </p>
+                <section>
+                    <label>1st Number:</label>
+                    <input type="number" class="input-group-sm" id="e7Input1" placeholder="Enter your number here">
+                </section>
+
+                <section>
+                    <label>2nd Number:</label>
+                    <input type="number" class="input-group-sm" id="e7Input2" placeholder="Enter your number here">
+                </section>
+
+                <section class="w-50 m-auto">
+                    <p class="text-left w-75">The Result is :&nbsp<span id="e7Result"></span></p>
+                </section>
+
+                <section class="col-12 text-center py-3">
+                    <button onclick="calc()" class="btn btn-outline-light w-50 m-auto">Compare</button>
+                </section>
+            </div>
+
+            <div id="tab8">
+                <p>8. Write a JavaScript program to check two given numbers and return true if one of the number is 50
+                    or if their sum is 50.
+                </p>
+                <section>
+                    <label>1st Number:</label>
+                    <input type="number" class="input-group-sm" id="e8Input1" placeholder="Enter your number here">
+                </section>
+
+                <section>
+                    <label>2nd Number:</label>
+                    <input type="number" class="input-group-sm" id="e8Input2" placeholder="Enter your number here">
+                </section>
+
+                <section class="w-50 m-auto">
+                    <p class="text-left w-75">The Result is :&nbsp<span id="e8result"></span></p>
+                </section>
+
+                <section class="col-12 text-center py-3">
+                    <button onclick="calculate()" class="btn btn-outline-light w-50 m-auto">Compare</button>
+                </section>
+            </div>
+
+            <div id="tab9">
+                <p>9- Write a JavaScript program to check a given integer is within 20 of 100 or 400</p>
+            </div>
+
+            <div id="tab10">
+                <p>10-Write a JavaScript program to check from two given integers, if one is positive and one is
+                    negative.
+                </p>
+                <section>
+                    <label>1st Number:</label>
+                    <input type="number" class="input-group-sm" id="e10Input1" placeholder="Enter your number here">
+                </section>
+
+                <section>
+                    <label>2nd Number:</label>
+                    <input type="number" class="input-group-sm" id="e10Input2" placeholder="Enter your number here">
+                </section>
+
+                <section class="w-50 m-auto">
+                    <p class="text-left w-75">The Result is :&nbsp<span id="e10result"></span></p>
+                </section>
+
+                <section class="col-12 text-center py-3">
+                    <button onclick="e10check()" class="btn btn-outline-light w-50 m-auto">Compare</button>
+                </section>
+
+            </div>
+
+            <div id="tab11">
+                <p>11- Write a JavaScript program to check if two given integer values are in the range 50..99
+                    (inclusive). Return true if either of them are in the said range
+                </p>
+                <section>
+                    <label>1st Number:</label>
+                    <input type="number" class="input-group-sm" id="e11Input1" placeholder="Enter your number here">
+                </section>
+
+                <section>
+                    <label>2nd Number:</label>
+                    <input type="number" class="input-group-sm" id="e11Input2" placeholder="Enter your number here">
+                </section>
+
+                <section class="w-50 m-auto">
+                    <p class="text-left w-75">The Result is :&nbsp<span id="e11Result"></span></p>
+                </section>
+
+                <section class="col-12 text-center py-3">
+                    <button onclick="e11Check()" class="btn btn-outline-light w-50 m-auto">Check</button>
+                </section>
+
+            </div>
+
+            <div id="tab12">
+                <p>12- Write a JavaScript program to find the largest of three given integers.
+                </p>
+                <section>
+                    <label>1st Number:</label>
+                    <input type="number" class="input-group-sm" id="e12Input1" placeholder="Enter your number here">
+                </section>
+
+                <section>
+                    <label>2nd Number:</label>
+                    <input type="number" class="input-group-sm" id="e12Input2" placeholder="Enter your number here">
+                </section>
+
+                <section>
+                    <label>3rd Number:</label>
+                    <input type="number" class="input-group-sm" id="e12Input3" placeholder="Enter your number here">
+                </section>
+
+                <section class="w-50 m-auto">
+                    <p class="text-left w-75"><span id="e12Result"></span></p>
+                </section>
+
+                <section class="col-12 text-center py-3">
+                    <button onclick="e12Check()" class="btn btn-outline-light w-50 m-auto">Check</button>
+                </section>
+            </div>
+
+            <div id="tab13">
+                <p>13- Write a JavaScript program to check if two numbers are in range 40..60 or in the range 70..100 inclusive
+                </p>
+                <section>
+                        <label>1st Number:</label>
+                        <input type="number" class="input-group-sm" id="e13Input1" placeholder="Enter your number here">
+                    </section>
+    
+                    <section>
+                        <label>2nd Number:</label>
+                        <input type="number" class="input-group-sm" id="e13Input2" placeholder="Enter your number here">
+                    </section>
+    
+                    <section class="w-50 m-auto">
+                        <p class="text-left w-75"><span id="e13Result"></span></p>
+                    </section>
+    
+                    <section class="col-12 text-center py-3">
+                        <button onclick="e13Check()" class="btn btn-outline-light w-50 m-auto">Check</button>
+                    </section>
+            </div>
+
+            <div id="tab14">
+                <!--
+                <p>14- Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3</p>
+                <section>
+                        <label>1st Number:</label>
+                        <input type="number" class="input-group-sm" id="e12Input1" placeholder="Enter your number here">
+                    </section>
+    
+                    <section>
+                        <label>2nd Number:</label>
+                        <input type="number" class="input-group-sm" id="e12Input2" placeholder="Enter your number here">
+                    </section>
+    
+                    <section>
+                        <label>3rd Number:</label>
+                        <input type="number" class="input-group-sm" id="e12Input3" placeholder="Enter your number here">
+                    </section>
+    
+                    <section class="w-50 m-auto">
+                        <p class="text-left w-75"><span id="e12Result"></span></p>
+                    </section>
+    
+                    <section class="col-12 text-center py-3">
+                        <button onclick="e12Check()" class="btn btn-outline-light w-50 m-auto">Check</button>
+                    </section>
+                    -->
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+        1-Write a JavaScr\ipt program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
+        2. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a
+        guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a
+        message "Not matched
+        3. Write a JavaScript program to calculate multiplication and division of two numbers (input from user)
+        Sample form :
+        4. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+        [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+        Expected Output :
+        60°C is 140 °F
+        45°F is 7.222222222222222°C
+        5. Write a JavaScript exercise to get the extension of a filename. (Search for it )
+        6 . Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return
+        double the absolute difference.
+        7 . Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns
+        triple their sum
+        8. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.
+
+
+=====
+        9- Write a JavaScript program to check a given integer is within 20 of 100 or 400
+=====
+
+
+        10-Write a JavaScript program to check from two given integers, if one is positive and one is negative.
+        11- Write a JavaScript program to check if two given integer values are in the range 50..99 (inclusive). Return true if
+        either of them are in the said range
+        12- Write a JavaScript program to find the largest of three given integers.
+        13- Write a JavaScript program to check if two numbers are in range 40..60 or in the range 70..100 inclusive
+        14- Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3
+-->
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
